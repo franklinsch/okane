@@ -9,8 +9,6 @@
 import UIKit
 
 class RequestTableViewCell: UITableViewCell {
-    
-    var request: Request
 
     @IBOutlet weak var requestImage: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -20,9 +18,9 @@ class RequestTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.requestImage.layer.cornerRadius = requestImage.layer.frame.width / 2
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -32,5 +30,4 @@ class RequestTableViewCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
 }
