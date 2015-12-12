@@ -47,7 +47,7 @@
                                 <rect key="frame" x="0.0" y="121" width="600" height="429.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="ITy-KK-wff">
-                                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
@@ -56,7 +56,7 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="requestCell" rowHeight="114" id="R4l-ZM-bop" customClass="RequestTableViewCell" customModule="okane_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="600" height="114"/>
+                                        <rect key="frame" x="0.0" y="72" width="600" height="114"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4l-ZM-bop" id="462-47-oZf">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="113.5"/>
@@ -166,7 +166,6 @@
         <!--Story Detail View Controller-->
         <scene sceneID="1NP-tE-bea">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P2I-8H-fms" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="1XN-dk-a03" customClass="StoryDetailViewController" customModule="okane_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gwv-Rf-BWO"/>
@@ -243,6 +242,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2I-8H-fms" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2960" y="-222"/>
         </scene>

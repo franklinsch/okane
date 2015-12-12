@@ -7,15 +7,20 @@
 //
 
 class Functionality {
-    func grow(_: USERID) {
+    func grow(userid: USERID) {
         
     }
     
-    func request(_: USERID, _: REQUESTID) -> REQUESTID {
-        return REQUESTID(id: 2)
+    func request(userid: USERID, requestid: Request) {
+        
     }
     
-    func invest(_: USERID, _: INVESTID) {
+    func invest(userid: USERID, investid: INVESTID) {
         
+    }
+    
+    func searchWithTags(searchTags: [String]) -> [Reqeust] {
+        objects = PFQuery(className:”Request”).whereKey(“tags”, containedIn: searchTags).getObjects()
+        return [] // NOT complete
     }
 }
