@@ -19,10 +19,10 @@ class Investment {
         self.amountInvested = amountInvested
         self.date = date
         
-        self.investid = generateID()
+        self.investid = generateID()!
     }
     
-    func generateID() -> INVESTID {
-        return 0;
+    func generateID() -> INVESTID? {
+        return nil
     }
 }

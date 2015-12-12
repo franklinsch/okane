@@ -15,7 +15,7 @@ class Request {
     var user: USERID;
     var date: Date;
     
-    init(title: String, description: String, amountToRaise: Int, amountRaised: Int, user: USERID) {
+    init(title: String, description: String, amountToRaise: Int, amountRaised: Int, user: USERID, date: Date) {
         self.title = title;
         self.description = description;
         self.amountToRaise = amountToRaise;
@@ -23,21 +23,21 @@ class Request {
         self.user = user;
         self.date = date
         
-        self.requestid = generateID();
+        self.requestid = generateID()!;
     }
     
-    func generateID() -> REQUESTID {
-        return 0;
+    func generateID() -> REQUESTID? {
+        return nil;
     }
     
     func addInvestmentAmount(investAmount: Int) {
         amountRaised += investAmount
-        if (amountRaised >= amountToraise) {
+        if (amountRaised >= amountToRaise) {
             completeRequest()
         }
     }
     
     func completeRequest() {
-        continue
+        return
     }
 }
