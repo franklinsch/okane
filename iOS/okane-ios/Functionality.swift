@@ -7,15 +7,15 @@
 //
 
 class Functionality {
-    func grow(USERID) {
+    func grow(userid: USERID) {
         
     }
     
-    func request(USERID, PROJECT) -> REQUESTID {
+    func request(userid: USERID, requestid: Request) {
         
     }
     
-    func invest(USERID, INVESTID) {
+    func invest(userid: USERID, investid: INVESTID) {
         
     }
 }
