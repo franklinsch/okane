@@ -7,7 +7,9 @@
 //
 
 class Request {
-    var requestid: REQUESTID;
+    static var counter = 0
+    
+    var requestid: REQUESTID
     var title: String
     var description: String
     var amountToRaise: Int
@@ -23,11 +25,11 @@ class Request {
         self.user = user;
         self.date = date
         
-        self.requestid = generateID()!;
+        self.requestid = generateID();
     }
     
-    func generateID() -> REQUESTID? {
-        return nil;
+    func generateID() -> REQUESTID {
+        return REQUESTID(id: Request.counter++)
     }
     
     func addInvestmentAmount(investAmount: Int) {
