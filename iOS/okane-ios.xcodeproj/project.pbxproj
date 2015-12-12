@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		251141631C1C55AE007A2FE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251141621C1C55AE007A2FE4 /* User.swift */; };
+		25CF14111C1C6FED008CA33C /* Invest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CF14101C1C6FED008CA33C /* Invest.storyboard */; };
+		25CF14131C1C78D1008CA33C /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CF14121C1C78D1008CA33C /* RequestTableViewController.swift */; };
 		25F635A41C1C5A8F00B9631B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F635A31C1C5A8F00B9631B /* Currency.swift */; };
 		25FB02EB1C1B1D68001DA2C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB02EA1C1B1D68001DA2C0 /* AppDelegate.swift */; };
 		25FB02ED1C1B1D68001DA2C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB02EC1C1B1D68001DA2C0 /* ViewController.swift */; };
@@ -17,6 +19,9 @@
 		25FB02F81C1B1D68001DA2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FB02F61C1B1D68001DA2C0 /* LaunchScreen.storyboard */; };
 		25FB03031C1B1D68001DA2C0 /* okane_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB03021C1B1D68001DA2C0 /* okane_iosTests.swift */; };
 		25FB030E1C1B1D68001DA2C0 /* okane_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB030D1C1B1D68001DA2C0 /* okane_iosUITests.swift */; };
+		2BFBDD001C1C7AB200EC619A /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBDCFF1C1C7AB200EC619A /* Investment.swift */; };
+		2BFBDD031C1C7BDB00EC619A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBDD011C1C7BDB00EC619A /* Request.swift */; };
+		2BFBDD041C1C7BDB00EC619A /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBDD021C1C7BDB00EC619A /* Functionality.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		251141621C1C55AE007A2FE4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		25CF14101C1C6FED008CA33C /* Invest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Invest.storyboard; sourceTree = "<group>"; };
+		25CF14121C1C78D1008CA33C /* RequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		25F635A31C1C5A8F00B9631B /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		25FB02E71C1B1D68001DA2C0 /* okane-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "okane-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FB02EA1C1B1D68001DA2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +60,9 @@
 		25FB03091C1B1D68001DA2C0 /* okane-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "okane-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FB030D1C1B1D68001DA2C0 /* okane_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = okane_iosUITests.swift; sourceTree = "<group>"; };
 		25FB030F1C1B1D68001DA2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFBDCFF1C1C7AB200EC619A /* Investment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
+		2BFBDD011C1C7BDB00EC619A /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2BFBDD021C1C7BDB00EC619A /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				25FB02EE1C1B1D68001DA2C0 /* Main.storyboard */,
+				25CF14101C1C6FED008CA33C /* Invest.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -95,6 +106,14 @@
 				25F635A31C1C5A8F00B9631B /* Currency.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		25CF14141C1C78D6008CA33C /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				25CF14121C1C78D1008CA33C /* RequestTableViewController.swift */,
+			);
+			name = VIewControllers;
 			sourceTree = "<group>";
 		};
 		25F635A21C1C56C100B9631B /* Utility */ = {
@@ -127,8 +146,12 @@
 		25FB02E91C1B1D68001DA2C0 /* okane-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2BFBDD011C1C7BDB00EC619A /* Request.swift */,
+				2BFBDD021C1C7BDB00EC619A /* Functionality.swift */,
 				25FB02EA1C1B1D68001DA2C0 /* AppDelegate.swift */,
 				25FB02EC1C1B1D68001DA2C0 /* ViewController.swift */,
+				2BFBDCFF1C1C7AB200EC619A /* Investment.swift */,
+				25CF14141C1C78D6008CA33C /* VIewControllers */,
 				251141611C1C5598007A2FE4 /* Models */,
 				251141601C1C553C007A2FE4 /* Storyboards */,
 				25FB02F41C1B1D68001DA2C0 /* Assets.xcassets */,
@@ -263,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25FB02F81C1B1D68001DA2C0 /* LaunchScreen.storyboard in Resources */,
+				25CF14111C1C6FED008CA33C /* Invest.storyboard in Resources */,
 				25FB02F51C1B1D68001DA2C0 /* Assets.xcassets in Resources */,
 				25FB02F01C1B1D68001DA2C0 /* Main.storyboard in Resources */,
 			);
@@ -290,10 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				251141631C1C55AE007A2FE4 /* User.swift in Sources */,
+				2BFBDD031C1C7BDB00EC619A /* Request.swift in Sources */,
 				25F635A41C1C5A8F00B9631B /* Currency.swift in Sources */,
 				25FB02F31C1B1D68001DA2C0 /* okane_ios.xcdatamodeld in Sources */,
 				25FB02ED1C1B1D68001DA2C0 /* ViewController.swift in Sources */,
+				25CF14131C1C78D1008CA33C /* RequestTableViewController.swift in Sources */,
 				25FB02EB1C1B1D68001DA2C0 /* AppDelegate.swift in Sources */,
+				2BFBDD041C1C7BDB00EC619A /* Functionality.swift in Sources */,
+				2BFBDD001C1C7AB200EC619A /* Investment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
