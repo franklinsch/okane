@@ -25,6 +25,6 @@ class Investment {
     }
     
     func generateID() -> INVESTID {
-        return INVESTID(id: Investmnet.counter++)
+        return INVESTID(id: Investment.counter++)
     }
 }
