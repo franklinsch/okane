@@ -7,4 +7,15 @@
 //
 
 class Functionality {
+    func grow(USERID) {
+        
+    }
+    
+    func request(USERID, PROJECT) -> REQUESTID {
+        
+    }
+    
+    func invest(USERID, INVESTID) {
+        
+    }
 }
