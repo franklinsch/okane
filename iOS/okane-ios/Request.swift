@@ -14,12 +14,15 @@ class Request {
     var amountRaised: Int
     var user: USERID;
     var date: Date;
+    
     init(title: String, description: String, amountToRaise: Int, amountRaised: Int, user: USERID) {
         self.title = title;
         self.description = description;
         self.amountToRaise = amountToRaise;
         self.amountRaised = amountRaised;
         self.user = user;
+        self.date = date
+        
         self.requestid = generateID();
     }
     
