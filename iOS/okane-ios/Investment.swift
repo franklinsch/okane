@@ -7,6 +7,8 @@
 //
 
 class Investment {
+    static var counter = 0
+    
     var investid: INVESTID
     var requestid: REQUESTID
     var userid: USERID
@@ -18,11 +20,12 @@ class Investment {
         self.userid = userid
         self.amountInvested = amountInvested
         self.date = date
-        
-        self.investid = generateID()!
+    
+        self.investid = INVESTID(id: 2)
+        self.investid = generateID()
     }
     
-    func generateID() -> INVESTID? {
-        return nil
+    func generateID() -> INVESTID {
+        return INVESTID(id: Investment.counter++)
     }
 }

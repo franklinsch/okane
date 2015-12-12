@@ -10,7 +10,8 @@ import UIKit
 
 class RequestGoalView: UIView {
 
-    let kProgressViewHeight: CGFloat = 2
+    let kProgressViewHeight: CGFloat = 5
+    let kProgressViewMaxWidth: CGFloat = 40
     let kProgressBarAmountSeparation: CGFloat = 5
    
     private var progressView: UIView!
@@ -18,12 +19,22 @@ class RequestGoalView: UIView {
     
     var progressRatio: CGFloat = 0 {
         didSet {
-            let progressViewFrame = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: frame.width * CGFloat(progressRatio), height: kProgressViewHeight)
+            let progressBarHeight = bounds.origin.y + frame.height - kProgressBarAmountSeparation
+            let progressBarWidth = kProgressViewMaxWidth * CGFloat(progressRatio)
+            
+            let progressViewFrame = CGRect(x: bounds.origin.x, y: progressBarHeight, width: progressBarWidth, height: kProgressViewHeight)
+            
+            let fillWidth = kProgressViewMaxWidth * CGFloat(1 - progressRatio)
+            
+            let progressViewFillFrame = CGRect(x: progressViewFrame.width, y: 0, width: fillWidth, height: kProgressViewHeight)
+            let progressViewFill = UIView(frame: progressViewFillFrame)
             
             if let view = progressView {
                 view.removeFromSuperview()
             }
             progressView = UIView(frame: progressViewFrame)
+            progressViewFill.backgroundColor = UIColor(netHex: 0xDBDDDE)
+            progressView.addSubview(progressViewFill)
             
             if (progressRatio > 0.5) {
                 self.progressView.backgroundColor = UIColor(netHex: 0xA4E786)
@@ -37,7 +48,7 @@ class RequestGoalView: UIView {
     
     var amount: Int = 0 {
         didSet {
-            let amountLabelFrame = CGRect(x: bounds.origin.x, y: progressView.frame.origin.y + kProgressBarAmountSeparation, width: progressView.frame.width, height: 40)
+            let amountLabelFrame = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: progressView.frame.width, height: 40)
             
             if let label = amountLabel {
                 label.removeFromSuperview()

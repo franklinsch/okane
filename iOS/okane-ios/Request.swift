@@ -9,6 +9,8 @@
 import UIKit
 
 class Request {
+    static var counter = 0
+    
     var requestid: REQUESTID
     var title: String
     var description: String
@@ -29,12 +31,12 @@ class Request {
         self.image = image
         self.interestRate = interestRate
         
-        self.requestid = REQUESTID()
-//        self.requestid = generateID()!
+        self.requestid = REQUESTID(id: 2)
+        self.requestid = generateID()
     }
     
-    func generateID() -> REQUESTID? {
-        return nil;
+    func generateID() -> REQUESTID {
+        return REQUESTID(id: Request.counter++)
     }
     
     func addInvestmentAmount(investAmount: Int) {
