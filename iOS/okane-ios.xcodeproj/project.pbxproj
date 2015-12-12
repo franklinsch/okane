@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		251141631C1C55AE007A2FE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251141621C1C55AE007A2FE4 /* User.swift */; };
+		25CF14111C1C6FED008CA33C /* Invest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CF14101C1C6FED008CA33C /* Invest.storyboard */; };
 		25F635A41C1C5A8F00B9631B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F635A31C1C5A8F00B9631B /* Currency.swift */; };
 		25FB02EB1C1B1D68001DA2C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB02EA1C1B1D68001DA2C0 /* AppDelegate.swift */; };
 		25FB02ED1C1B1D68001DA2C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB02EC1C1B1D68001DA2C0 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		251141621C1C55AE007A2FE4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		25CF14101C1C6FED008CA33C /* Invest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Invest.storyboard; sourceTree = "<group>"; };
 		25F635A31C1C5A8F00B9631B /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		25FB02E71C1B1D68001DA2C0 /* okane-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "okane-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FB02EA1C1B1D68001DA2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				25FB02EE1C1B1D68001DA2C0 /* Main.storyboard */,
+				25CF14101C1C6FED008CA33C /* Invest.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25FB02F81C1B1D68001DA2C0 /* LaunchScreen.storyboard in Resources */,
+				25CF14111C1C6FED008CA33C /* Invest.storyboard in Resources */,
 				25FB02F51C1B1D68001DA2C0 /* Assets.xcassets in Resources */,
 				25FB02F01C1B1D68001DA2C0 /* Main.storyboard in Resources */,
 			);
