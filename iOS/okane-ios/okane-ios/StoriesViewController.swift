@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class StoriesViewController: UIViewController, TabBarViewController {
 
@@ -16,8 +17,10 @@ class StoriesViewController: UIViewController, TabBarViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var requests = PFQuery(className: "Request").findObjects()
        
-        view.layer.contents = UIImage(named: "Search")!.CGImage;
+        view.layer.contents = UIImage(named: "Background")!.CGImage;
 
         let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
         let tabBar = TabBarView(frame: tabBarFrame)

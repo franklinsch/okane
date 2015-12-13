@@ -85,12 +85,12 @@ class Functionality {
         } catch {}
         do {
             let request = try PFQuery(className: "Request").getObjectWithId(requestid.id)
-            newInvestment["requestid"] = request
+            newInvestment["requestID"] = request
             let amountRaised = (request["amountRaised"] as! Int) + amountInvested
             
             request["amountRaised"] = amountRaised
             if (amountRaised > request["amountToRaise"] as! Int) {
-                completeRequest(request)
+                completeRequest(requestid)
             }
             try request.save()
         } catch {}
@@ -104,8 +104,11 @@ class Functionality {
         return INVESTID(id: "placeholder")
     }
     
-    class func completeRequest(request: PFObject) {
-        
+    class func completeRequest(requestid: REQUESTID) {
+        do {
+            try PFObject.deleteAll(PFQuery(className: "Investment").whereKey("requestID", equalTo: requestid.id).findObjects())
+            try PFQuery(className: "Request").getObjectWithId(requestid.id).delete()
+        } catch {}
     }
     
     class func searchWithTags(searchTags: [String]) -> [PFObject] {
