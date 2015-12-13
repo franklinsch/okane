@@ -27,4 +27,16 @@ class Functionality {
         }
         return [] // NOT complete
     }
+    
+    func addFriend(userid: USERID, friendid: USERID) {
+        
+    }
+    
+    func deleteFriend(userid: USERID, friendid: USERID) {
+        
+    }
+    
+    func confirmFriend(userid: USERID, friendid: USERID) {
+        
+    }
 }
