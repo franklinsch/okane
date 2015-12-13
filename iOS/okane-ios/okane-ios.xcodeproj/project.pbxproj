@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14C367FDC0021997FBC2CF49 /* libPods-okane-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32605FA5D00C03D615BE83A6 /* libPods-okane-ios.a */; };
 		2544CB701C1CF52200B94D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CB6F1C1CF52200B94D0F /* AppDelegate.swift */; };
 		2544CB721C1CF52200B94D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CB711C1CF52200B94D0F /* ViewController.swift */; };
 		2544CB751C1CF52200B94D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544CB731C1CF52200B94D0F /* Main.storyboard */; };
@@ -15,8 +16,6 @@
 		2544CB7D1C1CF52200B94D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544CB7B1C1CF52200B94D0F /* LaunchScreen.storyboard */; };
 		2544CB881C1CF52200B94D0F /* okane_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CB871C1CF52200B94D0F /* okane_iosTests.swift */; };
 		2544CB931C1CF52200B94D0F /* okane_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CB921C1CF52200B94D0F /* okane_iosUITests.swift */; };
-		2544CBBF1C1CF71500B94D0F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB01C1CF71500B94D0F /* Date.swift */; };
-		2544CBC01C1CF71500B94D0F /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB11C1CF71500B94D0F /* Investment.swift */; };
 		2544CBC11C1CF71500B94D0F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB21C1CF71500B94D0F /* Currency.swift */; };
 		2544CBC21C1CF71500B94D0F /* INVESTID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB31C1CF71500B94D0F /* INVESTID.swift */; };
 		2544CBC31C1CF71500B94D0F /* NewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */; };
@@ -29,7 +28,6 @@
 		2544CBCA1C1CF71500B94D0F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBBB1C1CF71500B94D0F /* User.swift */; };
 		2544CBCB1C1CF71500B94D0F /* USERID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBBC1C1CF71500B94D0F /* USERID.swift */; };
 		2544CBCC1C1CF71500B94D0F /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */; };
-		2544CBCE1C1CF72D00B94D0F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBCD1C1CF72D00B94D0F /* Request.swift */; };
 		2544CBD61C1CF7F800B94D0F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBD01C1CF7F800B94D0F /* Bolts.framework */; };
 		2544CBD71C1CF7F800B94D0F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBD11C1CF7F800B94D0F /* FBSDKCoreKit.framework */; };
 		2544CBD81C1CF7F800B94D0F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBD21C1CF7F800B94D0F /* FBSDKLoginKit.framework */; };
@@ -93,8 +91,6 @@
 		2544CB8E1C1CF52200B94D0F /* okane-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "okane-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544CB921C1CF52200B94D0F /* okane_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = okane_iosUITests.swift; sourceTree = "<group>"; };
 		2544CB941C1CF52200B94D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2544CBB01C1CF71500B94D0F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		2544CBB11C1CF71500B94D0F /* Investment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		2544CBB21C1CF71500B94D0F /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		2544CBB31C1CF71500B94D0F /* INVESTID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVESTID.swift; sourceTree = "<group>"; };
 		2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRequestViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +104,6 @@
 		2544CBBC1C1CF71500B94D0F /* USERID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USERID.swift; sourceTree = "<group>"; };
 		2544CBBD1C1CF71500B94D0F /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
-		2544CBCD1C1CF72D00B94D0F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		2544CBD01C1CF7F800B94D0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
 		2544CBD11C1CF7F800B94D0F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2544CBD21C1CF7F800B94D0F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -139,6 +134,9 @@
 		25E88B691C1CFFF9001C1078 /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
 		25E88B6A1C1CFFF9001C1078 /* Request.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Request.storyboard; sourceTree = "<group>"; };
 		25E88B6B1C1CFFF9001C1078 /* Invest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Invest.storyboard; sourceTree = "<group>"; };
+		32605FA5D00C03D615BE83A6 /* libPods-okane-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-okane-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		421CDD5686A293E0E5E55436 /* Pods-okane-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okane-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okane-ios/Pods-okane-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		5561AFC989ADB2E57CBCB4B3 /* Pods-okane-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okane-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-okane-ios/Pods-okane-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +163,7 @@
 				2544CBD81C1CF7F800B94D0F /* FBSDKLoginKit.framework in Frameworks */,
 				25E88B671C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				2544CBDA1C1CF7F800B94D0F /* Parse.framework in Frameworks */,
+				14C367FDC0021997FBC2CF49 /* libPods-okane-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +191,8 @@
 				2544CB861C1CF52200B94D0F /* okane-iosTests */,
 				2544CB911C1CF52200B94D0F /* okane-iosUITests */,
 				2544CB6D1C1CF52200B94D0F /* Products */,
+				5637EB857FA80270CCD04168 /* Pods */,
+				3E988ED700664316722D09C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,9 +211,6 @@
 			children = (
 				25E88B691C1CFFF9001C1078 /* Functionality.swift */,
 				2544CBCF1C1CF7EA00B94D0F /* Frameworks */,
-				2544CBCD1C1CF72D00B94D0F /* Request.swift */,
-				2544CBB01C1CF71500B94D0F /* Date.swift */,
-				2544CBB11C1CF71500B94D0F /* Investment.swift */,
 				2544CBB21C1CF71500B94D0F /* Currency.swift */,
 				2544CBB31C1CF71500B94D0F /* INVESTID.swift */,
 				2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */,
@@ -291,6 +289,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3E988ED700664316722D09C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32605FA5D00C03D615BE83A6 /* libPods-okane-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5637EB857FA80270CCD04168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				421CDD5686A293E0E5E55436 /* Pods-okane-ios.debug.xcconfig */,
+				5561AFC989ADB2E57CBCB4B3 /* Pods-okane-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2544CB971C1CF52200B94D0F /* Build configuration list for PBXNativeTarget "okane-ios" */;
 			buildPhases = (
+				D6CA13350F980EA2C636E0E9 /* Check Pods Manifest.lock */,
 				2544CB681C1CF52200B94D0F /* Sources */,
 				2544CB691C1CF52200B94D0F /* Frameworks */,
 				2544CB6A1C1CF52200B94D0F /* Resources */,
+				46CF85B4003CACA32E9E4C81 /* Embed Pods Frameworks */,
+				C15DDD2ACB64521A68721374 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,6 +439,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46CF85B4003CACA32E9E4C81 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-okane-ios/Pods-okane-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15DDD2ACB64521A68721374 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-okane-ios/Pods-okane-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6CA13350F980EA2C636E0E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2544CB681C1CF52200B94D0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -435,8 +501,6 @@
 				2544CBC31C1CF71500B94D0F /* NewRequestViewController.swift in Sources */,
 				2544CBC61C1CF71500B94D0F /* RequestTableViewCell.swift in Sources */,
 				25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */,
-				2544CBCE1C1CF72D00B94D0F /* Request.swift in Sources */,
-				2544CBC01C1CF71500B94D0F /* Investment.swift in Sources */,
 				2544CB701C1CF52200B94D0F /* AppDelegate.swift in Sources */,
 				25876EAC1C1D33F800D641B8 /* HoshiTextField.swift in Sources */,
 				2544CBCA1C1CF71500B94D0F /* User.swift in Sources */,
@@ -449,7 +513,6 @@
 				2544CBC41C1CF71500B94D0F /* RequestGoalView.swift in Sources */,
 				2544CBC81C1CF71500B94D0F /* StoriesViewController.swift in Sources */,
 				2544CBC71C1CF71500B94D0F /* RequestTableViewController.swift in Sources */,
-				2544CBBF1C1CF71500B94D0F /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +650,7 @@
 		};
 		2544CB981C1CF52200B94D0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421CDD5686A293E0E5E55436 /* Pods-okane-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -605,6 +669,7 @@
 		};
 		2544CB991C1CF52200B94D0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5561AFC989ADB2E57CBCB4B3 /* Pods-okane-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
