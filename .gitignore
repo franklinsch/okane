@@ -34,5 +34,6 @@ ehthumbs.db
 Thumbs.db
 backend/node_modules/*
 
-Pods/*
+Pods/
 okane-ios.xcodeproj/*.pbxproj
+okane-ios.xcodeproj/project.pbxproj
