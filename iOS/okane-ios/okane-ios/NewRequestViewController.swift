@@ -18,6 +18,12 @@ class NewRequestViewController: UIViewController, TabBarViewController {
         super.viewDidLoad()
         mainScrollView.alwaysBounceVertical = true
         
+        let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
+        let tabBar = TabBarView(frame: tabBarFrame)
+        tabBar.superView = self
+        
+        self.view.addSubview(tabBar)
+        
         tabBarViewController = self.parentViewController as! UITabBarController
         tabBarViewController.tabBar.hidden = true
     }

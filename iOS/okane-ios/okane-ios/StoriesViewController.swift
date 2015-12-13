@@ -19,6 +19,7 @@ class StoriesViewController: UIViewController, TabBarViewController {
        
         let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
         let tabBar = TabBarView(frame: tabBarFrame)
+        tabBar.superView = self
         
         self.view.addSubview(tabBar)
         

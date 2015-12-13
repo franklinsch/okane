@@ -20,6 +20,7 @@
                     <connections>
                         <segue destination="ooq-wk-vwC" kind="relationship" relationship="viewControllers" id="bgl-Fc-a1e"/>
                         <segue destination="XB0-CE-rzS" kind="relationship" relationship="viewControllers" id="3yK-yP-RjV"/>
+                        <segue destination="hXf-sf-Cf8" kind="relationship" relationship="viewControllers" id="DsQ-6s-X7e"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -442,6 +443,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpC-7U-VSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828" y="486"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Pa2-mQ-BNe">
+            <objects>
+                <viewController id="hXf-sf-Cf8" customClass="MyAccountViewController" customModule="okane_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rr9-8g-bD9"/>
+                        <viewControllerLayoutGuide type="bottom" id="iBQ-Dm-iJw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d8D-nd-5e9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="429-eh-vsT">
+                                <rect key="frame" x="232" y="28" width="137.5" height="32.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="429-eh-vsT" firstAttribute="centerX" secondItem="d8D-nd-5e9" secondAttribute="centerX" id="87c-dE-Llz"/>
+                            <constraint firstItem="429-eh-vsT" firstAttribute="top" secondItem="Rr9-8g-bD9" secondAttribute="bottom" constant="8" id="c60-zj-HhA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="grz-mT-CdZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dL4-0y-f2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="1139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cu7-oW-kY1">

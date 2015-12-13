@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoryDetailViewController: UIViewController {
+class StoryDetailViewController: UIViewController, TabBarViewController {
     
     var request: Request!
 
@@ -21,12 +21,22 @@ class StoryDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
+        let tabBar = TabBarView(frame: tabBarFrame)
+        tabBar.superView = self
+        
+        self.view.addSubview(tabBar)
+        
         self.titleLabel.text = request.title
         self.resultImage.image = request.image
         self.requestGoal.progressRatio = CGFloat(request.amountRaised) / CGFloat(request.amountToRaise)
         self.requestGoal.amount = request.amountToRaise
         self.interestLabel.text = "\(request.interestRate)% interest"
         self.descriptionView.text = request.description
+    }
+    
+    func getTabBarViewController() -> UITabBarController {
+        return (self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)! - 2] as! StoriesViewController).getTabBarViewController()
     }
     
     override func didReceiveMemoryWarning() {

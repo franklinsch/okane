@@ -20,6 +20,8 @@ class TabBarView: UIView {
     var storiesImageView: UIImageView
     var accountImageView: UIImageView
     
+    var superView: TabBarViewController!
+    
     override init(frame: CGRect) {
         let storiesFrame = CGRect(x: frame.origin.x, y: 0, width: frame.width / 2, height: frame.height)
         storiesButton = UIButton(frame: storiesFrame)
@@ -94,14 +96,15 @@ class TabBarView: UIView {
     }
     
     func pressedStories() {
-       
+        superView.getTabBarViewController().selectedIndex = 0
     }
     
     func pressedAccount() {
-        
+        superView.getTabBarViewController().selectedIndex = 2
     }
     
     func pressedHome() {
+        superView.getTabBarViewController().selectedIndex = 1
     }
 
     required init?(coder aDecoder: NSCoder) {

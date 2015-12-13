@@ -54,6 +54,7 @@
 		25876EAA1C1D1F4D00D641B8 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EA91C1D1F4D00D641B8 /* TabBarView.swift */; };
 		25876EAC1C1D33F800D641B8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */; };
 		25876EAE1C1D35D800D641B8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */; };
+		25876EB01C1D3AC100D641B8 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */; };
 		25E88B671C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */; };
 		25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E88B691C1CFFF9001C1078 /* Functionality.swift */; };
 		25E88B6F1C1CFFF9001C1078 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E88B6A1C1CFFF9001C1078 /* Request.storyboard */; };
@@ -132,6 +133,7 @@
 		25876EA91C1D1F4D00D641B8 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		25E88B621C1CF981001C1078 /* okane-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "okane-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Frameworks/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		25E88B691C1CFFF9001C1078 /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				2544CBB91C1CF71500B94D0F /* StoriesViewController.swift */,
 				25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */,
 				2544CBBA1C1CF71500B94D0F /* StoryDetailViewController.swift */,
+				25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */,
 				2544CBBB1C1CF71500B94D0F /* User.swift */,
 				2544CBBC1C1CF71500B94D0F /* USERID.swift */,
 				2544CBBD1C1CF71500B94D0F /* TextFieldEffects.h */,
@@ -425,6 +428,7 @@
 			files = (
 				2544CBC51C1CF71500B94D0F /* REQUESTID.swift in Sources */,
 				2544CBC11C1CF71500B94D0F /* Currency.swift in Sources */,
+				25876EB01C1D3AC100D641B8 /* MyAccountViewController.swift in Sources */,
 				2544CB781C1CF52200B94D0F /* okane_ios.xcdatamodeld in Sources */,
 				2544CBCB1C1CF71500B94D0F /* USERID.swift in Sources */,
 				2544CB721C1CF52200B94D0F /* ViewController.swift in Sources */,
