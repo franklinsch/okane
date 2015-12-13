@@ -76,9 +76,9 @@ class RequestTableViewController: UITableViewController {
             requestCell.requestImage.addSubview(requestImageView)
         }
         
-        requestCell.titleLabel.text = requestWrapper.requestObject["title"] as! String
+        requestCell.titleLabel.text = requestWrapper.requestObject["title"] as? String
         requestCell.interestLabel.text = "\(requestWrapper.requestObject["interestRate"] as! Int)%"
-        requestCell.descriptionLabel.text = requestWrapper.requestObject["description"] as! String
+        requestCell.descriptionLabel.text = requestWrapper.requestObject["description"] as? String
         
         let amountRaised = requestWrapper.requestObject["amountRaised"] as! Int
         let amountToRaise = requestWrapper.requestObject["amountToRaise"] as! Int
