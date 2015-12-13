@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 import CoreData
 
 @UIApplicationMain
@@ -115,4 +116,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication, withSession:PFFacebookUtils.session())
     //}
 }
-

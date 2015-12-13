@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Saurav Mitra. All rights reserved.
 //
 
+import Parse
+
 class Functionality {
     func grow(userid: USERID) {
         
@@ -39,11 +41,11 @@ class Functionality {
     }
     
     func searchWithTags(searchTags: [String]) -> [Request] {
-        do {
-            let objects = try PFQuery(className: "Request").whereKey("tags", containedIn: searchTags).findObjects()
-        } catch {
-            
-        }
+//        do {
+//            let objects = try PFQuery(className: "Request").whereKey("tags", containedIn: searchTags).findObjects()
+//        } catch {
+//            
+//        }
         return [] // NOT complete
     }
     

@@ -72,6 +72,7 @@ class RequestTableViewController: UITableViewController {
         requestCell.titleLabel.text = request.title
         requestCell.interestLabel.text = "\(request.interestRate)%"
         requestCell.descriptionLabel.text = request.description
+        
         requestCell.requestGoalView.progressRatio = CGFloat(request.amountRaised) / CGFloat(request.amountToRaise)
         requestCell.requestGoalView.amount = request.amountToRaise
 
