@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 import CoreData
 
 @UIApplicationMain
@@ -17,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-//        Parse.setApplicationId("GfuFlGyTRvR2BhiqaS0AYWS8ypcp9GIshw0VI81B", clientKey: "Z3j9wUI1ukznjGjr2GaOGh3uVppClpjGP0YHgsXK")
-//        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
-//        PFFacebookUtils.initializeFacebook()
+        Parse.setApplicationId("GfuFlGyTRvR2BhiqaS0AYWS8ypcp9GIshw0VI81B", clientKey: "Z3j9wUI1ukznjGjr2GaOGh3uVppClpjGP0YHgsXK")
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        //PFFacebookUtils.initializeFacebook()
         return true
     }
 
@@ -39,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-//        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
+        //FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
     }
 
     func applicationWillTerminate(application: UIApplication) {
@@ -111,8 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-//        return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication, withSession:PFFacebookUtils.session())
-//    }
+    //func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        //return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication, withSession:PFFacebookUtils.session())
+    //}
 }
-
