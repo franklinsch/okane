@@ -20,11 +20,11 @@ class Functionality {
     }
     
     func searchWithTags(searchTags: [String]) -> [Request] {
-        do {
-            let objects = try PFQuery(className: "Request").whereKey("tags", containedIn: searchTags).findObjects()
-        } catch {
-            
-        }
+//        do {
+//            let objects = try PFQuery(className: "Request").whereKey("tags", containedIn: searchTags).findObjects()
+//        } catch {
+//            
+//        }
         return [] // NOT complete
     }
     

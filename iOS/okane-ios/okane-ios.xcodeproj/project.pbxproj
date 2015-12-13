@@ -48,6 +48,8 @@
 		2544CBF31C1CF82E00B94D0F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBE61C1CF82E00B94D0F /* Social.framework */; };
 		2544CBF41C1CF82E00B94D0F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBE71C1CF82E00B94D0F /* StoreKit.framework */; };
 		2544CBF51C1CF82E00B94D0F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBE81C1CF82E00B94D0F /* SystemConfiguration.framework */; };
+		25876EA51C1D19E600D641B8 /* fruits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25876EA31C1D19E600D641B8 /* fruits.jpg */; };
+		25876EA61C1D19E600D641B8 /* ribs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25876EA41C1D19E600D641B8 /* ribs.jpg */; };
 		25E88B671C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */; };
 		25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E88B691C1CFFF9001C1078 /* Functionality.swift */; };
 		25E88B6F1C1CFFF9001C1078 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E88B6A1C1CFFF9001C1078 /* Request.storyboard */; };
@@ -120,6 +122,8 @@
 		2544CBE61C1CF82E00B94D0F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2544CBE71C1CF82E00B94D0F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2544CBE81C1CF82E00B94D0F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		25876EA31C1D19E600D641B8 /* fruits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fruits.jpg; sourceTree = "<group>"; };
+		25876EA41C1D19E600D641B8 /* ribs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ribs.jpg; sourceTree = "<group>"; };
 		25E88B621C1CF981001C1078 /* okane-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "okane-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Frameworks/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		25E88B691C1CFFF9001C1078 /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 				25E88B6B1C1CFFF9001C1078 /* Invest.storyboard */,
 				2544CB731C1CF52200B94D0F /* Main.storyboard */,
 				2544CB791C1CF52200B94D0F /* Assets.xcassets */,
+				25876EA31C1D19E600D641B8 /* fruits.jpg */,
+				25876EA41C1D19E600D641B8 /* ribs.jpg */,
 				2544CB7B1C1CF52200B94D0F /* LaunchScreen.storyboard */,
 				2544CB7E1C1CF52200B94D0F /* Info.plist */,
 				2544CB761C1CF52200B94D0F /* okane_ios.xcdatamodeld */,
@@ -377,7 +383,9 @@
 				2544CB7D1C1CF52200B94D0F /* LaunchScreen.storyboard in Resources */,
 				2544CB7A1C1CF52200B94D0F /* Assets.xcassets in Resources */,
 				25E88B6F1C1CFFF9001C1078 /* Request.storyboard in Resources */,
+				25876EA61C1D19E600D641B8 /* ribs.jpg in Resources */,
 				2544CB751C1CF52200B94D0F /* Main.storyboard in Resources */,
+				25876EA51C1D19E600D641B8 /* fruits.jpg in Resources */,
 				25E88B701C1CFFF9001C1078 /* Invest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
