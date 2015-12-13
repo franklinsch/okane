@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="veV-Zt-0Y8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="veV-Zt-0Y8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -19,11 +19,12 @@
                     <connections>
                         <segue destination="ooq-wk-vwC" kind="relationship" relationship="viewControllers" id="bgl-Fc-a1e"/>
                         <segue destination="XB0-CE-rzS" kind="relationship" relationship="viewControllers" id="3yK-yP-RjV"/>
+                        <segue destination="hXf-sf-Cf8" kind="relationship" relationship="viewControllers" id="DsQ-6s-X7e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6n-V9-oRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-125" y="43"/>
+            <point key="canvasLocation" x="-89" y="293"/>
         </scene>
         <!--Stories View Controller-->
         <scene sceneID="LHI-gm-Ch1">
@@ -442,6 +443,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpC-7U-VSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828" y="486"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Pa2-mQ-BNe">
+            <objects>
+                <viewController id="hXf-sf-Cf8" customClass="MyAccountViewController" customModule="okane_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rr9-8g-bD9"/>
+                        <viewControllerLayoutGuide type="bottom" id="iBQ-Dm-iJw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d8D-nd-5e9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="grz-mT-CdZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dL4-0y-f2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="1139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cu7-oW-kY1">
