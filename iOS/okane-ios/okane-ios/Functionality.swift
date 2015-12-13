@@ -35,7 +35,10 @@ class Functionality {
         newRequest["amountToRaise"] = amountToRaise;
         newRequest["amountRaised"] = amountRaised;
         if let uid = userid {
-            newRequest["userid"] = uid;
+            do {
+                let u = try PFQuery(className: "_User").getObjectWithId(uid.id)
+                newRequest["userid"] = u;
+            } catch {}
         } else {
             let user = PFUser()
             user.username = "hello"
@@ -53,35 +56,56 @@ class Functionality {
         newRequest["interestRate"] = interestRate;
         newRequest["returnBy"] = returnBy;
         if (tags == []) {
-            newRequest["tags"] = generateTags(title, description: description, amountToRaise: amountToRaise, amountRaised: amountRaised, userid: userid, interestRate: interestRate, returnBy: returnBy)
+            newRequest.addObjectsFromArray(generateTags(title, description: description, amountToRaise: amountToRaise, amountRaised: amountRaised, userid: userid, interestRate: interestRate, returnBy: returnBy), forKey: "tags")
         } else {
-            newRequest["tags"] = tags;
+            newRequest.addObjectsFromArray(tags, forKey: "tags");
         }
-        newRequest["image"] = "bleh"
         do {
-          try newRequest.save()
+            newRequest["image"] = try PFFile(name: "", contentsAtPath: "")
+        } catch {}
+        print(newRequest)
+        do {
+            try newRequest.save()
         } catch {
-            
+            print ("Error")
         }
-        return REQUESTID(id: newRequest.objectId!)
+        //return REQUESTID(id: newRequest.objectId!)
+        return REQUESTID(id: "placeholder")
     }
     
     class func generateTags(title: String, description: String, amountToRaise: Int, amountRaised: Int, userid: USERID?, interestRate: Int, returnBy: NSDate) -> [String] {
         return []
     }
     
-    
     class func invest(amountInvested: Int, userid: USERID, requestid: REQUESTID) -> INVESTID {
         let newInvestment = PFObject(className: "Investment");
         newInvestment["amountInvested"] = amountInvested
-        newInvestment["userid"] = userid
-        newInvestment["requestid"] = requestid
+        do {
+            newInvestment["userID"] = try PFQuery(className: "_User").getObjectWithId(userid.id)
+        } catch {}
+        do {
+            let request = try PFQuery(className: "Request").getObjectWithId(requestid.id)
+            newInvestment["requestid"] = request
+            let amountRaised = (request["amountRaised"] as! Int) + amountInvested
+            
+            request["amountRaised"] = amountRaised
+            if (amountRaised > request["amountToRaise"] as! Int) {
+                completeRequest(request)
+            }
+            try request.save()
+        } catch {}
+        
         do {
             try newInvestment.save()
         } catch {
             
         }
-        return INVESTID(id: newInvestment.objectId!)
+        //return INVESTID(id: newInvestment.objectId!)
+        return INVESTID(id: "placeholder")
+    }
+    
+    class func completeRequest(request: PFObject) {
+        
     }
     
     class func searchWithTags(searchTags: [String]) -> [PFObject] {
