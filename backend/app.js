@@ -21,9 +21,37 @@ var gateway = braintree.connect({
 app.get("/client_token", function (req, res) {
   gateway.clientToken.generate({}, function (err, response) {
     res.send(response.clientToken);
-    console.log("Sent the token");
+    //console.log("Sent the token");
   });
 });
+
+
+app.get("/savings/:user", function (req, res) {
+  var url = 'http://134.213.221.48/users/' + req.params.user + '/transactions';
+  request(url, function(err, response, body) {
+    var data = JSON.parse(body);
+    var returnData = parseData(data);
+    res.json(returnData);
+  });
+});
+
+function parseData(data) {
+  var counter = 0;
+  var savedSum = 0;
+  data.forEach(function(line) {
+    if (line.pocketCcy !== line.partyCcy) {
+      savedSum += (Math.abs(line.amount)) * 0.05;
+      counter++;
+    }
+  });
+  var ret = {
+    totalSavings: savedSum,
+    totalEarnings: savedSum * 1.1,
+    averageSave: savedSum / counter
+  }
+  return ret;  
+}
+
 
 app.post("/checkout", function (req, res) {
   var nonce = req.body.payment_method_nonce;
