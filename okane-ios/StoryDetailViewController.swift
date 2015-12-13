@@ -39,6 +39,8 @@ class StoryDetailViewController: UIViewController, TabBarViewController {
         let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
         let tabBar = TabBarView(frame: tabBarFrame)
         tabBar.superView = self
+        
+        view.layer.contents = UIImage(named: "Background")!.CGImage;
     }
     
     func getTabBarViewController() -> UITabBarController {

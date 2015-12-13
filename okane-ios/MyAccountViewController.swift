@@ -17,6 +17,8 @@ class MyAccountViewController: UIViewController, TabBarViewController {
         tabBar.superView = self
         
         self.view.addSubview(tabBar)
+        
+        view.layer.contents = UIImage(named: "Background")!.CGImage;
     }
     
     func getTabBarViewController() -> UITabBarController {
