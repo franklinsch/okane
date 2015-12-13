@@ -10,8 +10,21 @@ import Parse
 import UIKit
 
 class Functionality {
+    class func signUpUser(username: String, password: String, email: String) -> PFUser {
+        let newUser = PFUser()
+        newUser.username = username
+        newUser.password = password
+        newUser.email = email
+        do {
+            try newUser.signUp()
+        } catch {}
+        return newUser
+    }
     class func grow(userid: USERID) {
-        
+        do {
+            let objects = try PFQuery(className: "Request").orderByAscending("creditScore").orderByAscending("interestRate").findObjects()
+        } catch {}
+        return
     }
     
     class func request(title: String, description: String, amountToRaise: Int, amountRaised: Int, userid: USERID?, interestRate: Int, returnBy: NSDate, tags: [String] = []) -> REQUESTID {
