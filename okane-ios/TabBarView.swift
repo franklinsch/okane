@@ -48,7 +48,13 @@ class TabBarView: UIView {
         let buttonLabelWidth = CGFloat(50)
         let buttonLabelHeight = CGFloat(4)
         
+        accountImageView = UIImageView(image: UIImage(named: "profile-empty.png"))
+        storiesImageView = UIImageView(image: UIImage(named: "stories-empty.png"))
+        
         storiesLabel = UILabel(frame: CGRectMake(CGRectGetMidX(storiesButton.frame) - buttonLabelWidth, self.storiesButton.frame.height - buttonLabelHeight * 5, buttonLabelWidth, buttonLabelHeight))
+        
+        storiesImageView.frame = CGRectMake(CGRectGetMidX(storiesButton.frame) - 42, 6, 22, 22)
+        storiesButton.addSubview(storiesImageView)
         
         storiesLabel.text = "Stories"
         storiesLabel.font = UIFont.systemFontOfSize(12)
@@ -57,6 +63,9 @@ class TabBarView: UIView {
         storiesButton.addSubview(storiesLabel)
         
         accountLabel = UILabel(frame: CGRectMake(CGRectGetMidX(accountButton.frame) / 2 - buttonLabelWidth, self.accountButton.frame.height - buttonLabelHeight * 5, buttonLabelWidth, buttonLabelHeight))
+        
+        accountImageView.frame = CGRectMake(CGRectGetMidX(accountImageView.frame) - 7, 6, 22, 22)
+        accountButton.addSubview(accountImageView)
         
         accountLabel.text = "Account"
         accountLabel.font = UIFont.systemFontOfSize(12)
@@ -79,9 +88,6 @@ class TabBarView: UIView {
         accountLabel.textColor = Colors.darkBlue
         accountButton.addSubview(accountLabel)
         
-        accountImageView = UIImageView(image: UIImage(named: "fruits.jpg"))
-        storiesImageView = UIImageView(image: UIImage(named: "ribs.jpg"))
-        
         
         super.init(frame: frame)
         self.addSubview(storiesButton)
@@ -98,14 +104,20 @@ class TabBarView: UIView {
     
     func pressedStories() {
         superView.getTabBarViewController().selectedIndex = 0
+        accountImageView = UIImageView(image: UIImage(named: "profile-empty.jpg"))
+        storiesImageView = UIImageView(image: UIImage(named: "stories-full.jpg"))
     }
     
     func pressedAccount() {
         superView.getTabBarViewController().selectedIndex = 2
+        accountImageView = UIImageView(image: UIImage(named: "profile-full.jpg"))
+        storiesImageView = UIImageView(image: UIImage(named: "stories-empty.jpg"))
     }
     
     func pressedHome() {
         superView.getTabBarViewController().selectedIndex = 1
+        accountImageView = UIImageView(image: UIImage(named: "profile-empty.jpg"))
+        storiesImageView = UIImageView(image: UIImage(named: "stories-empty.jpg"))
     }
 
     required init?(coder aDecoder: NSCoder) {
