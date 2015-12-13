@@ -1,7 +1,7 @@
 class REQUESTID {
-    var id: Int
+    var id: String
     
-    init(id: Int) {
+    init(id: String) {
         self.id = id
     }
 }

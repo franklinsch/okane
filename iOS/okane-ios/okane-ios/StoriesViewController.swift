@@ -42,8 +42,8 @@ class StoriesViewController: UIViewController {
         if segue.identifier == "storySegue" {
             if let destination = segue.destinationViewController as? StoryDetailViewController {
                 if let index = storiesTableView.indexPathForSelectedRow?.row {
-                    let request = tableViewController.requests[index]
-                    destination.request = request
+                    let requestWrapper = tableViewController.requests[index]
+                    destination.requestWrapper = requestWrapper
                 }
             }
         }
