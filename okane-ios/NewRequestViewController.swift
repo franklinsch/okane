@@ -15,7 +15,12 @@ class NewRequestViewController: UIViewController, TabBarViewController {
     
     var tabBarViewController: UITabBarController!
     
-    @IBOutlet weak var dateButton: UIButton!
+    @IBOutlet weak var titleTextField: HoshiTextField!
+    @IBOutlet weak var descriptionTextField: HoshiTextField!
+    @IBOutlet weak var amountToRaiseTextField: HoshiTextField!
+    @IBOutlet weak var interestRateTextField: HoshiTextField!
+    @IBOutlet weak var returnDateTextField: HoshiTextField!
+    @IBOutlet weak var createAStory: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +35,45 @@ class NewRequestViewController: UIViewController, TabBarViewController {
         tabBarViewController = self.parentViewController as! UITabBarController
         tabBarViewController.tabBar.hidden = true
         
-        view.layer.contents = UIImage(named: "background.png")!.CGImage
+        view.layer.contents = UIImage(named: "Background.png")!.CGImage
         
         submitView.backgroundColor = Colors.darkBlue
         submitView.layer.cornerRadius = 5.0
         submitView.alpha = 0.75
         
+        createAStory.alpha = 0
+        titleTextField.alpha = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.createAStory.alpha = 0.2
+        self.submitView.alpha = 0
+        UIView.animateWithDuration(0.4, animations: {
+                self.createAStory.alpha = 1.0
+        })
+        
+        let textFields = [self.titleTextField, self.descriptionTextField, self.descriptionTextField, self.amountToRaiseTextField, self.interestRateTextField, self.returnDateTextField]
+        
+        var i = 0.0
+        for field in textFields {
+            field.transform = CGAffineTransformMakeTranslation(0, -15)
+            field.alpha = 0
+            UIView.animateWithDuration(0.2, delay: 0.2 * i, options: UIViewAnimationOptions.TransitionNone, animations: {
+                field.transform = CGAffineTransformIdentity
+                field.alpha = 1
+                }, completion: { _ in
+            })
+            i++
+        }
+        
+        UIView.animateWithDuration(0.5, delay: 0.8, options: .TransitionNone, animations: {
+                self.submitView.alpha = 1
+            }, completion: { _ in
+                
+        })
+    }
+    
+    @IBAction func didPressSubmit(sender: AnyObject) {
     }
     
     func getTabBarViewController() -> UITabBarController {

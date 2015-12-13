@@ -44,24 +44,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-1o-Bru">
-                                <rect key="frame" x="0.0" y="122" width="600" height="429"/>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.32705022681297224" blue="0.42289077822311416" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <searchBar key="tableHeaderView" opaque="NO" alpha="0.0" contentMode="redraw" searchBarStyle="minimal" id="ITy-KK-wff">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="Vcw-2x-WMH" id="2Zw-Cg-OE1"/>
-                                    </connections>
-                                </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-1o-Bru">
+                                <rect key="frame" x="0.0" y="121" width="600" height="429.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="requestCell" rowHeight="114" id="R4l-ZM-bop" customClass="RequestTableViewCell" customModule="okane_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="600" height="114"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="requestCell" rowHeight="113" id="R4l-ZM-bop" customClass="RequestTableViewCell" customModule="okane_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4l-ZM-bop" id="462-47-oZf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="113.5"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4l-ZM-bop" id="462-47-oZf">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="112.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I needz cash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbO-7E-kc7">
@@ -100,7 +91,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="oE4-6i-jHJ" firstAttribute="leading" secondItem="2rg-oe-mlr" secondAttribute="trailing" constant="8" id="02O-bf-idg"/>
                                                 <constraint firstItem="sde-zy-kdB" firstAttribute="leading" secondItem="lbO-7E-kc7" secondAttribute="trailing" constant="11" id="0kA-hz-oJ8"/>
@@ -117,7 +108,7 @@
                                                 <constraint firstItem="bYZ-rz-cpH" firstAttribute="leading" secondItem="462-47-oZf" secondAttribute="leadingMargin" constant="8" id="shc-pS-bbi"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="2rg-oe-mlr" id="BbP-Eg-w0D"/>
                                             <outlet property="interestLabel" destination="sde-zy-kdB" id="yz1-Mg-7EH"/>
@@ -158,14 +149,13 @@
                 <searchDisplayController id="ReN-Qi-Sco">
                     <connections>
                         <outlet property="delegate" destination="Vcw-2x-WMH" id="rh4-oR-uF9"/>
-                        <outlet property="searchBar" destination="ITy-KK-wff" id="hGN-F6-dtm"/>
                         <outlet property="searchContentsController" destination="Vcw-2x-WMH" id="cRf-fD-aJi"/>
                         <outlet property="searchResultsDataSource" destination="Vcw-2x-WMH" id="SWH-7u-waU"/>
                         <outlet property="searchResultsDelegate" destination="Vcw-2x-WMH" id="vHr-HV-vnF"/>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2309" y="-222"/>
+            <point key="canvasLocation" x="2309" y="-204"/>
         </scene>
         <!--Story Detail View Controller-->
         <scene sceneID="1NP-tE-bea">
@@ -299,25 +289,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35K-bu-WvF">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="500"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-DU-5YO" customClass="HoshiTextField" customModule="okane_ios" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="101" width="560" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="QIx-jb-L1T"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                        <color key="value" red="0.0039215686274509803" green="0.2196078431372549" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                                        <color key="value" red="0.4628598035" green="0.64460491230000005" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="0.27852746210000001" green="0.27852746210000001" blue="0.27852746210000001" alpha="0.84971494932432434" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMY-Ku-fUp">
                                                 <rect key="frame" x="463" y="203" width="97" height="30"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -369,6 +340,25 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Return date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-aQ-9lC" customClass="HoshiTextField" customModule="okane_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="367" width="560" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="9jt-iM-QOn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" red="0.0039215686269999999" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" red="0.4628598035" green="0.64460491230000005" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.27852746210000001" green="0.27852746210000001" blue="0.27852746210000001" alpha="0.84971494930000002" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Amount to raise" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pk-DV-YML" customClass="HoshiTextField" customModule="okane_ios" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="265" width="559" height="43"/>
                                                 <constraints>
@@ -397,6 +387,9 @@
                                                         <state key="normal" title="Submit">
                                                             <color key="titleColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="didPressSubmit:" destination="XB0-CE-rzS" eventType="touchUpInside" id="8l1-Ex-EaW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -405,22 +398,22 @@
                                                     <constraint firstAttribute="width" constant="112" id="UHT-Hv-pS9"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Return date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-aQ-9lC" customClass="HoshiTextField" customModule="okane_ios" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="367" width="560" height="43"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-DU-5YO" customClass="HoshiTextField" customModule="okane_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="101" width="560" height="43"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="9jt-iM-QOn"/>
+                                                    <constraint firstAttribute="height" constant="43" id="QIx-jb-L1T"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                        <color key="value" red="0.0039215686269999999" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.0039215686274509803" green="0.2196078431372549" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                         <color key="value" red="0.4628598035" green="0.64460491230000005" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="0.27852746210000001" green="0.27852746210000001" blue="0.27852746210000001" alpha="0.84971494930000002" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.27852746210000001" green="0.27852746210000001" blue="0.27852746210000001" alpha="0.84971494932432434" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
@@ -472,13 +465,19 @@
                     <tabBarItem key="tabBarItem" systemItem="history" id="uKf-ZI-0Kx" customClass="SimpleTabBarItem" customModule="okane_ios" customModuleProvider="target"/>
                     <navigationItem key="navigationItem" id="37v-Y5-Fxv"/>
                     <connections>
+                        <outlet property="amountToRaiseTextField" destination="4Pk-DV-YML" id="Xom-Pe-o3R"/>
+                        <outlet property="createAStory" destination="zMQ-Sk-AKS" id="zZJ-P1-iVh"/>
+                        <outlet property="descriptionTextField" destination="gWU-Vm-UNj" id="3Cp-2l-vNj"/>
+                        <outlet property="interestRateTextField" destination="loo-8q-Nmd" id="WBB-Nv-ctF"/>
                         <outlet property="mainScrollView" destination="eKf-6Q-vu6" id="jG8-Gs-Z03"/>
+                        <outlet property="returnDateTextField" destination="RyT-aQ-9lC" id="OxD-SF-Vfq"/>
                         <outlet property="submitView" destination="EBb-D0-tef" id="6sS-Ci-ZAw"/>
+                        <outlet property="titleTextField" destination="1JW-DU-5YO" id="OKm-mb-UKD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpC-7U-VSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="486"/>
+            <point key="canvasLocation" x="866" y="452"/>
         </scene>
         <!--Item-->
         <scene sceneID="Pa2-mQ-BNe">
@@ -523,7 +522,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Vcw-2x-WMH" kind="relationship" relationship="rootViewController" id="uv9-Xl-3lx"/>
+                        <segue destination="Vcw-2x-WMH" kind="relationship" relationship="rootViewController" id="LzW-HQ-6pb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Otc-b9-FjU" userLabel="First Responder" sceneMemberID="firstResponder"/>

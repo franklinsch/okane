@@ -59,6 +59,8 @@
 		25876EC81C1D53FE00D641B8 /* stories-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 25876EC41C1D53FE00D641B8 /* stories-full.png */; };
 		25D8E08C1C1D6E0700737B8D /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D8E08B1C1D6E0700737B8D /* Background.png */; };
 		25D8E08F1C1D7B7000737B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D8E08E1C1D7B7000737B8D /* Main.storyboard */; };
+		25D8E0911C1D7CB800737B8D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D8E0901C1D7CB800737B8D /* LocalAuthentication.framework */; };
+		25D8E0941C1D835200737B8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8E0931C1D835200737B8D /* Request.swift */; };
 		25E88B671C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */; };
 		25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E88B691C1CFFF9001C1078 /* Functionality.swift */; };
 		C7C691904B5C182A96422B9B /* Pods_okane_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75BDD6C8A5C0AB7F9C9887B /* Pods_okane_ios.framework */; };
@@ -141,6 +143,8 @@
 		25876EC41C1D53FE00D641B8 /* stories-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stories-full.png"; sourceTree = "<group>"; };
 		25D8E08B1C1D6E0700737B8D /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		25D8E08E1C1D7B7000737B8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		25D8E0901C1D7CB800737B8D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		25D8E0931C1D835200737B8D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		25E88B621C1CF981001C1078 /* okane-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "okane-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Frameworks/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		25E88B691C1CFFF9001C1078 /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D8E0911C1D7CB800737B8D /* LocalAuthentication.framework in Frameworks */,
 				25876EB41C1D477100D641B8 /* ParseUI.framework in Frameworks */,
 				2544CBE91C1CF82E00B94D0F /* Accounts.framework in Frameworks */,
 				2544CBEA1C1CF82E00B94D0F /* AudioToolbox.framework in Frameworks */,
@@ -198,6 +203,7 @@
 		0CDA7E3DE2A00B4D614199C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25D8E0901C1D7CB800737B8D /* LocalAuthentication.framework */,
 				B75BDD6C8A5C0AB7F9C9887B /* Pods_okane_ios.framework */,
 			);
 			name = Frameworks;
@@ -234,10 +240,12 @@
 				25876EB51C1D480900D641B8 /* Models */,
 				25876EB71C1D484700D641B8 /* Util */,
 				2544CB6F1C1CF52200B94D0F /* AppDelegate.swift */,
+				25D8E0931C1D835200737B8D /* Request.swift */,
 				2544CB711C1CF52200B94D0F /* ViewController.swift */,
 				25876EB81C1D485C00D641B8 /* Resources */,
 				2544CB791C1CF52200B94D0F /* Assets.xcassets */,
 				25D8E08E1C1D7B7000737B8D /* Main.storyboard */,
+				25D8E0951C1D8AE100737B8D /* New Group */,
 				2544CB7B1C1CF52200B94D0F /* LaunchScreen.storyboard */,
 				2544CB7E1C1CF52200B94D0F /* Info.plist */,
 				2544CB761C1CF52200B94D0F /* okane_ios.xcdatamodeld */,
@@ -343,6 +351,13 @@
 				25D8E08B1C1D6E0700737B8D /* Background.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		25D8E0951C1D8AE100737B8D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		CDE2514DC2D15347215C06B6 /* Pods */ = {
@@ -551,6 +566,7 @@
 				2544CB721C1CF52200B94D0F /* ViewController.swift in Sources */,
 				2544CBC31C1CF71500B94D0F /* NewRequestViewController.swift in Sources */,
 				25876EB21C1D476400D641B8 /* RequestWrapper.swift in Sources */,
+				25D8E0941C1D835200737B8D /* Request.swift in Sources */,
 				2544CBC61C1CF71500B94D0F /* RequestTableViewCell.swift in Sources */,
 				25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */,
 				2544CB701C1CF52200B94D0F /* AppDelegate.swift in Sources */,
