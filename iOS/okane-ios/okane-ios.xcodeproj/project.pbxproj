@@ -50,6 +50,10 @@
 		2544CBF51C1CF82E00B94D0F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBE81C1CF82E00B94D0F /* SystemConfiguration.framework */; };
 		25876EA51C1D19E600D641B8 /* fruits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25876EA31C1D19E600D641B8 /* fruits.jpg */; };
 		25876EA61C1D19E600D641B8 /* ribs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25876EA41C1D19E600D641B8 /* ribs.jpg */; };
+		25876EA81C1D1D5400D641B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EA71C1D1D5400D641B8 /* Constants.swift */; };
+		25876EAA1C1D1F4D00D641B8 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EA91C1D1F4D00D641B8 /* TabBarView.swift */; };
+		25876EAC1C1D33F800D641B8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */; };
+		25876EAE1C1D35D800D641B8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */; };
 		25E88B671C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */; };
 		25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E88B691C1CFFF9001C1078 /* Functionality.swift */; };
 		25E88B6F1C1CFFF9001C1078 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E88B6A1C1CFFF9001C1078 /* Request.storyboard */; };
@@ -124,6 +128,10 @@
 		2544CBE81C1CF82E00B94D0F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		25876EA31C1D19E600D641B8 /* fruits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fruits.jpg; sourceTree = "<group>"; };
 		25876EA41C1D19E600D641B8 /* ribs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ribs.jpg; sourceTree = "<group>"; };
+		25876EA71C1D1D5400D641B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		25876EA91C1D1F4D00D641B8 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		25E88B621C1CF981001C1078 /* okane-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "okane-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Frameworks/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		25E88B691C1CFFF9001C1078 /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
@@ -178,19 +186,6 @@
 		2544CB631C1CF52200B94D0F = {
 			isa = PBXGroup;
 			children = (
-				2544CBDC1C1CF82E00B94D0F /* Accounts.framework */,
-				2544CBDD1C1CF82E00B94D0F /* AudioToolbox.framework */,
-				2544CBDE1C1CF82E00B94D0F /* CFNetwork.framework */,
-				2544CBDF1C1CF82E00B94D0F /* CoreGraphics.framework */,
-				2544CBE01C1CF82E00B94D0F /* CoreLocation.framework */,
-				2544CBE11C1CF82E00B94D0F /* libsqlite3.tbd */,
-				2544CBE21C1CF82E00B94D0F /* libz.tbd */,
-				2544CBE31C1CF82E00B94D0F /* MobileCoreServices.framework */,
-				2544CBE41C1CF82E00B94D0F /* QuartzCore.framework */,
-				2544CBE51C1CF82E00B94D0F /* Security.framework */,
-				2544CBE61C1CF82E00B94D0F /* Social.framework */,
-				2544CBE71C1CF82E00B94D0F /* StoreKit.framework */,
-				2544CBE81C1CF82E00B94D0F /* SystemConfiguration.framework */,
 				2544CB6E1C1CF52200B94D0F /* okane-ios */,
 				2544CB861C1CF52200B94D0F /* okane-iosTests */,
 				2544CB911C1CF52200B94D0F /* okane-iosUITests */,
@@ -223,7 +218,9 @@
 				2544CBB61C1CF71500B94D0F /* REQUESTID.swift */,
 				2544CBB71C1CF71500B94D0F /* RequestTableViewCell.swift */,
 				2544CBB81C1CF71500B94D0F /* RequestTableViewController.swift */,
+				25876EA91C1D1F4D00D641B8 /* TabBarView.swift */,
 				2544CBB91C1CF71500B94D0F /* StoriesViewController.swift */,
+				25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */,
 				2544CBBA1C1CF71500B94D0F /* StoryDetailViewController.swift */,
 				2544CBBB1C1CF71500B94D0F /* User.swift */,
 				2544CBBC1C1CF71500B94D0F /* USERID.swift */,
@@ -231,7 +228,9 @@
 				2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */,
 				2544CB6F1C1CF52200B94D0F /* AppDelegate.swift */,
 				2544CB711C1CF52200B94D0F /* ViewController.swift */,
+				25876EA71C1D1D5400D641B8 /* Constants.swift */,
 				25E88B6A1C1CFFF9001C1078 /* Request.storyboard */,
+				25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */,
 				25E88B6B1C1CFFF9001C1078 /* Invest.storyboard */,
 				2544CB731C1CF52200B94D0F /* Main.storyboard */,
 				2544CB791C1CF52200B94D0F /* Assets.xcassets */,
@@ -266,6 +265,19 @@
 		2544CBCF1C1CF7EA00B94D0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2544CBDC1C1CF82E00B94D0F /* Accounts.framework */,
+				2544CBDD1C1CF82E00B94D0F /* AudioToolbox.framework */,
+				2544CBDE1C1CF82E00B94D0F /* CFNetwork.framework */,
+				2544CBDF1C1CF82E00B94D0F /* CoreGraphics.framework */,
+				2544CBE01C1CF82E00B94D0F /* CoreLocation.framework */,
+				2544CBE11C1CF82E00B94D0F /* libsqlite3.tbd */,
+				2544CBE21C1CF82E00B94D0F /* libz.tbd */,
+				2544CBE31C1CF82E00B94D0F /* MobileCoreServices.framework */,
+				2544CBE41C1CF82E00B94D0F /* QuartzCore.framework */,
+				2544CBE51C1CF82E00B94D0F /* Security.framework */,
+				2544CBE61C1CF82E00B94D0F /* Social.framework */,
+				2544CBE71C1CF82E00B94D0F /* StoreKit.framework */,
+				2544CBE81C1CF82E00B94D0F /* SystemConfiguration.framework */,
 				25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */,
 				2544CBD01C1CF7F800B94D0F /* Bolts.framework */,
 				2544CBD11C1CF7F800B94D0F /* FBSDKCoreKit.framework */,
@@ -422,10 +434,14 @@
 				2544CBCE1C1CF72D00B94D0F /* Request.swift in Sources */,
 				2544CBC01C1CF71500B94D0F /* Investment.swift in Sources */,
 				2544CB701C1CF52200B94D0F /* AppDelegate.swift in Sources */,
+				25876EAC1C1D33F800D641B8 /* HoshiTextField.swift in Sources */,
 				2544CBCA1C1CF71500B94D0F /* User.swift in Sources */,
 				2544CBCC1C1CF71500B94D0F /* TextFieldsEffects.swift in Sources */,
 				2544CBC21C1CF71500B94D0F /* INVESTID.swift in Sources */,
+				25876EAE1C1D35D800D641B8 /* TabBarViewController.swift in Sources */,
 				2544CBC91C1CF71500B94D0F /* StoryDetailViewController.swift in Sources */,
+				25876EA81C1D1D5400D641B8 /* Constants.swift in Sources */,
+				25876EAA1C1D1F4D00D641B8 /* TabBarView.swift in Sources */,
 				2544CBC41C1CF71500B94D0F /* RequestGoalView.swift in Sources */,
 				2544CBC81C1CF71500B94D0F /* StoriesViewController.swift in Sources */,
 				2544CBC71C1CF71500B94D0F /* RequestTableViewController.swift in Sources */,

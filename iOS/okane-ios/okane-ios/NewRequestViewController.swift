@@ -8,13 +8,22 @@
 
 import UIKit
 
-class NewRequestViewController: UIViewController {
+class NewRequestViewController: UIViewController, TabBarViewController {
 
     @IBOutlet weak var mainScrollView: UIScrollView!
+    
+    var tabBarViewController: UITabBarController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainScrollView.alwaysBounceVertical = true
+        
+        tabBarViewController = self.parentViewController as! UITabBarController
+        tabBarViewController.tabBar.hidden = true
+    }
+    
+    func getTabBarViewController() -> UITabBarController {
+        return tabBarViewController
     }
 
     override func didReceiveMemoryWarning() {

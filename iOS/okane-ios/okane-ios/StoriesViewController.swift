@@ -8,17 +8,29 @@
 
 import UIKit
 
-class StoriesViewController: UIViewController {
+class StoriesViewController: UIViewController, TabBarViewController {
 
     @IBOutlet weak var storiesTableView: UITableView!
     let tableViewController = RequestTableViewController()
+    var tabBarViewController: UITabBarController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
+        let tabBar = TabBarView(frame: tabBarFrame)
+        
+        self.view.addSubview(tabBar)
         
         storiesTableView.delegate = tableViewController
         storiesTableView.dataSource = tableViewController
+        
+        tabBarViewController = self.parentViewController?.parentViewController as! UITabBarController
+        tabBarViewController.tabBar.hidden = true
+    }
+    
+    func getTabBarViewController() -> UITabBarController {
+        return tabBarController!
     }
     
     override func viewDidAppear(animated: Bool) {

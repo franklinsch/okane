@@ -10,6 +10,7 @@
         <!--Simple Tab Bar Controller-->
         <scene sceneID="LaX-Nn-xHV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6n-V9-oRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="veV-Zt-0Y8" customClass="SimpleTabBarController" customModule="okane_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tJg-vG-TJU" customClass="SimpleTabBar" customModule="okane_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -21,9 +22,8 @@
                         <segue destination="XB0-CE-rzS" kind="relationship" relationship="viewControllers" id="3yK-yP-RjV"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g6n-V9-oRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-125" y="43"/>
+            <point key="canvasLocation" x="-89" y="293"/>
         </scene>
         <!--Stories View Controller-->
         <scene sceneID="LHI-gm-Ch1">
