@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import ParseUI
+import Parse
 
 class RequestTableViewController: UITableViewController {
-    
-    var requests: [Request] = [Request(title: "I need food", description: "food food food food food food food food food food food food food food food food food food food food ", amountToRaise: 300, amountRaised: 250, user: USERID(id: 2), date: Date(year: 2015, month: 11, day: 12), image: UIImage(named: "ribs.jpg"), interestRate: 5),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83),
-        Request(title: "Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, user: USERID(id: 4), date: Date(year: 2052, month: 24, day: 24), image: nil, interestRate: 83)
+    var requests: [RequestWrapper] = [
+//        RequestWrapper(requestid: Functionality.request("I need food", description: "food food food food food food food food food food food food food food food food food food food food ", amountToRaise: 300, amountRaised: 250, userid: nil, interestRate: 5, returnBy: NSDate(timeIntervalSince1970: 10000000)), image: UIImage(named: "ribs.jpg")),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
+//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil)
     ]
 
     override func viewDidLoad() {
@@ -53,14 +57,17 @@ class RequestTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("requestCell", forIndexPath: indexPath)
 
-        let request = requests[indexPath.row]
+        let requestWrapper = requests[indexPath.row]
         
         guard let requestCell = cell as? RequestTableViewCell else {
             fatalError("Table view cell couldn't be casted to RequestTableViewCell")
         }
     
-        if let requestImage = request.image {
-            let requestImageView = UIImageView(image: requestImage)
+        if let requestImageFile = requestWrapper.requestObject["image"] as? PFFile {
+            let requestImageView = PFImageView()
+            requestImageView.image = nil
+            requestImageView.file = requestImageFile
+            requestImageView.loadInBackground()
             requestImageView.frame = requestCell.requestImage.bounds
             requestImageView.contentMode = UIViewContentMode.ScaleAspectFit
             requestImageView.layer.cornerRadius = requestImageView.layer.frame.width / 2
@@ -69,11 +76,14 @@ class RequestTableViewController: UITableViewController {
             requestCell.requestImage.addSubview(requestImageView)
         }
         
-        requestCell.titleLabel.text = request.title
-        requestCell.interestLabel.text = "\(request.interestRate)%"
-        requestCell.descriptionLabel.text = request.description
-        requestCell.requestGoalView.progressRatio = CGFloat(request.amountRaised) / CGFloat(request.amountToRaise)
-        requestCell.requestGoalView.amount = request.amountToRaise
+        requestCell.titleLabel.text = requestWrapper.requestObject["title"] as? String
+        requestCell.interestLabel.text = "\(requestWrapper.requestObject["interestRate"] as! Int)%"
+        requestCell.descriptionLabel.text = requestWrapper.requestObject["description"] as? String
+        
+        let amountRaised = requestWrapper.requestObject["amountRaised"] as! Int
+        let amountToRaise = requestWrapper.requestObject["amountToRaise"] as! Int
+        requestCell.requestGoalView.progressRatio = CGFloat(amountRaised) / CGFloat(amountToRaise)
+        requestCell.requestGoalView.amount = amountToRaise
 
         return cell
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ParseFacebookUtilsV4
 
 class ViewController: UIViewController {
 
@@ -22,16 +23,16 @@ class ViewController: UIViewController {
 
     
     @IBAction func fbLoginClick(sender: AnyObject) {
-        //PFFacebookUtils.logInWithPermissions(self.permissions, block: {
-        //    (user: PFUser?, error: NSError?) -> Void in
-        //    if user == nil {
-        //        NSLog("Uh oh. The user cancelled the Facebook login.")
-        //    } else if user!.isNew {
-        //        NSLog("User signed up and logged in through Facebook!")
-        //    } else {
-        //        NSLog("User logged in through Facebook! \(user!.username)")
-        //    }
-        //})
+//        PFFacebookUtils.logInWithPermissions(self.permissions, block: {
+//            (user: PFUser?, error: NSError?) -> Void in
+//            if user == nil {
+//                NSLog("Uh oh. The user cancelled the Facebook login.")
+//            } else if user!.isNew {
+//                NSLog("User signed up and logged in through Facebook!")
+//            } else {
+//                NSLog("User logged in through Facebook! \(user!.username)")
+//            }
+//        })
     }
 }
 

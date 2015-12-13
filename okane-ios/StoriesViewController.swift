@@ -8,17 +8,30 @@
 
 import UIKit
 
-class StoriesViewController: UIViewController {
+class StoriesViewController: UIViewController, TabBarViewController {
 
     @IBOutlet weak var storiesTableView: UITableView!
     let tableViewController = RequestTableViewController()
+    var tabBarViewController: UITabBarController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
+        let tabBar = TabBarView(frame: tabBarFrame)
+        tabBar.superView = self
+        
+        self.view.addSubview(tabBar)
         
         storiesTableView.delegate = tableViewController
         storiesTableView.dataSource = tableViewController
+        
+        tabBarViewController = self.parentViewController?.parentViewController as! UITabBarController
+        tabBarViewController.tabBar.hidden = true
+    }
+    
+    func getTabBarViewController() -> UITabBarController {
+        return tabBarController!
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -35,14 +48,18 @@ class StoriesViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "storySegue" {
+            if let destination = segue.destinationViewController as? StoryDetailViewController {
+                if let index = storiesTableView.indexPathForSelectedRow?.row {
+                    let requestWrapper = tableViewController.requests[index]
+                    destination.requestWrapper = requestWrapper
+                }
+            }
+        }
     }
-    */
 
 }
