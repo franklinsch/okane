@@ -1,0 +1,20 @@
+{
+  "name": "hackkingswebserver",
+  "version": "1.0.0",
+  "description": "Web server for creating data requests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "Heiki",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "braintree": "^1.32.0",
+    "express": "^4.13.3",
+    "request-json": "^0.5.3"
+  }
+}
