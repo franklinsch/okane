@@ -18,4 +18,9 @@ class Functionality {
     func invest(userid: USERID, investid: INVESTID) {
         
     }
+    
+    func searchWithTags(searchTags: [String]) -> [Reqeust] {
+        objects = PFQuery(className:”Request”).whereKey(“tags”, containedIn: searchTags).getObjects()
+        return [] // NOT complete
+    }
 }

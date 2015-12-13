@@ -20,7 +20,8 @@ class Investment {
         self.userid = userid
         self.amountInvested = amountInvested
         self.date = date
-        
+    
+        self.investid = INVESTID(id: 2)
         self.investid = generateID()
     }
     
