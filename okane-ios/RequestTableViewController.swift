@@ -11,19 +11,8 @@ import ParseUI
 import Parse
 
 class RequestTableViewController: UITableViewController {
-    var requests: [RequestWrapper] = [
-//        RequestWrapper(requestid: Functionality.request("I need food", description: "food food food food food food food food food food food food food food food food food food food food ", amountToRaise: 300, amountRaised: 250, userid: nil, interestRate: 5, returnBy: NSDate(timeIntervalSince1970: 10000000)), image: UIImage(named: "ribs.jpg")),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil),
-//        RequestWrapper(requestid: Functionality.request("Bawawa", description: "Wtf ali", amountToRaise: 3, amountRaised: 1, userid: nil, interestRate: 83, returnBy: NSDate(timeIntervalSince1970: 1400)), image: nil)
-    ]
-
+    var requests: [RequestWrapper] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,16 +46,16 @@ class RequestTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("requestCell", forIndexPath: indexPath)
 
-        let requestWrapper = requests[indexPath.row]
-        
         guard let requestCell = cell as? RequestTableViewCell else {
             fatalError("Table view cell couldn't be casted to RequestTableViewCell")
         }
+        
+        let requestWrapper = requests[indexPath.row]
     
-        requestCell.backgroundColor = UIColor.clearColor()
-        requestCell.backgroundView = UIView()
-        requestCell.contentView.backgroundColor = UIColor.clearColor()
-        requestCell.selectedBackgroundView = UIView()
+//        requestCell.backgroundColor = UIColor.clearColor()
+//        requestCell.backgroundView = UIView()
+//        requestCell.contentView.backgroundColor = UIColor.clearColor()
+//        requestCell.selectedBackgroundView = UIView()
         
         if let requestImageFile = requestWrapper.requestObject["image"] as? PFFile {
             let requestImageView = PFImageView()
