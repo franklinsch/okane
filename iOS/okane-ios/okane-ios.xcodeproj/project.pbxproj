@@ -15,8 +15,6 @@
 		2544CB7D1C1CF52200B94D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544CB7B1C1CF52200B94D0F /* LaunchScreen.storyboard */; };
 		2544CB881C1CF52200B94D0F /* okane_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CB871C1CF52200B94D0F /* okane_iosTests.swift */; };
 		2544CB931C1CF52200B94D0F /* okane_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CB921C1CF52200B94D0F /* okane_iosUITests.swift */; };
-		2544CBBF1C1CF71500B94D0F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB01C1CF71500B94D0F /* Date.swift */; };
-		2544CBC01C1CF71500B94D0F /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB11C1CF71500B94D0F /* Investment.swift */; };
 		2544CBC11C1CF71500B94D0F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB21C1CF71500B94D0F /* Currency.swift */; };
 		2544CBC21C1CF71500B94D0F /* INVESTID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB31C1CF71500B94D0F /* INVESTID.swift */; };
 		2544CBC31C1CF71500B94D0F /* NewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */; };
@@ -29,7 +27,6 @@
 		2544CBCA1C1CF71500B94D0F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBBB1C1CF71500B94D0F /* User.swift */; };
 		2544CBCB1C1CF71500B94D0F /* USERID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBBC1C1CF71500B94D0F /* USERID.swift */; };
 		2544CBCC1C1CF71500B94D0F /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */; };
-		2544CBCE1C1CF72D00B94D0F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544CBCD1C1CF72D00B94D0F /* Request.swift */; };
 		2544CBD61C1CF7F800B94D0F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBD01C1CF7F800B94D0F /* Bolts.framework */; };
 		2544CBD71C1CF7F800B94D0F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBD11C1CF7F800B94D0F /* FBSDKCoreKit.framework */; };
 		2544CBD81C1CF7F800B94D0F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544CBD21C1CF7F800B94D0F /* FBSDKLoginKit.framework */; };
@@ -55,10 +52,10 @@
 		25876EAC1C1D33F800D641B8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */; };
 		25876EAE1C1D35D800D641B8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */; };
 		25876EB01C1D3AC100D641B8 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */; };
+		25876EB21C1D476400D641B8 /* RequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25876EB11C1D476400D641B8 /* RequestWrapper.swift */; };
+		25876EB41C1D477100D641B8 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25876EB31C1D477100D641B8 /* ParseUI.framework */; };
 		25E88B671C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */; };
 		25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E88B691C1CFFF9001C1078 /* Functionality.swift */; };
-		25E88B6F1C1CFFF9001C1078 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E88B6A1C1CFFF9001C1078 /* Request.storyboard */; };
-		25E88B701C1CFFF9001C1078 /* Invest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E88B6B1C1CFFF9001C1078 /* Invest.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +90,6 @@
 		2544CB8E1C1CF52200B94D0F /* okane-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "okane-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544CB921C1CF52200B94D0F /* okane_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = okane_iosUITests.swift; sourceTree = "<group>"; };
 		2544CB941C1CF52200B94D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2544CBB01C1CF71500B94D0F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		2544CBB11C1CF71500B94D0F /* Investment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		2544CBB21C1CF71500B94D0F /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		2544CBB31C1CF71500B94D0F /* INVESTID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVESTID.swift; sourceTree = "<group>"; };
 		2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRequestViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +103,6 @@
 		2544CBBC1C1CF71500B94D0F /* USERID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USERID.swift; sourceTree = "<group>"; };
 		2544CBBD1C1CF71500B94D0F /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
-		2544CBCD1C1CF72D00B94D0F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		2544CBD01C1CF7F800B94D0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
 		2544CBD11C1CF7F800B94D0F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2544CBD21C1CF7F800B94D0F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -134,11 +128,11 @@
 		25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		25876EB11C1D476400D641B8 /* RequestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestWrapper.swift; sourceTree = "<group>"; };
+		25876EB31C1D477100D641B8 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "okane-ios/Frameworks/ParseUI.framework"; sourceTree = "<group>"; };
 		25E88B621C1CF981001C1078 /* okane-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "okane-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		25E88B661C1CFBFD001C1078 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Frameworks/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		25E88B691C1CFFF9001C1078 /* Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
-		25E88B6A1C1CFFF9001C1078 /* Request.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Request.storyboard; sourceTree = "<group>"; };
-		25E88B6B1C1CFFF9001C1078 /* Invest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Invest.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25876EB41C1D477100D641B8 /* ParseUI.framework in Frameworks */,
 				2544CBE91C1CF82E00B94D0F /* Accounts.framework in Frameworks */,
 				2544CBEA1C1CF82E00B94D0F /* AudioToolbox.framework in Frameworks */,
 				2544CBEB1C1CF82E00B94D0F /* CFNetwork.framework in Frameworks */,
@@ -188,6 +183,7 @@
 		2544CB631C1CF52200B94D0F = {
 			isa = PBXGroup;
 			children = (
+				25876EB31C1D477100D641B8 /* ParseUI.framework */,
 				2544CB6E1C1CF52200B94D0F /* okane-ios */,
 				2544CB861C1CF52200B94D0F /* okane-iosTests */,
 				2544CB911C1CF52200B94D0F /* okane-iosUITests */,
@@ -208,37 +204,15 @@
 		2544CB6E1C1CF52200B94D0F /* okane-ios */ = {
 			isa = PBXGroup;
 			children = (
-				25E88B691C1CFFF9001C1078 /* Functionality.swift */,
 				2544CBCF1C1CF7EA00B94D0F /* Frameworks */,
-				2544CBCD1C1CF72D00B94D0F /* Request.swift */,
-				2544CBB01C1CF71500B94D0F /* Date.swift */,
-				2544CBB11C1CF71500B94D0F /* Investment.swift */,
-				2544CBB21C1CF71500B94D0F /* Currency.swift */,
-				2544CBB31C1CF71500B94D0F /* INVESTID.swift */,
-				2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */,
-				2544CBB51C1CF71500B94D0F /* RequestGoalView.swift */,
-				2544CBB61C1CF71500B94D0F /* REQUESTID.swift */,
-				2544CBB71C1CF71500B94D0F /* RequestTableViewCell.swift */,
-				2544CBB81C1CF71500B94D0F /* RequestTableViewController.swift */,
-				25876EA91C1D1F4D00D641B8 /* TabBarView.swift */,
-				2544CBB91C1CF71500B94D0F /* StoriesViewController.swift */,
-				25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */,
-				2544CBBA1C1CF71500B94D0F /* StoryDetailViewController.swift */,
-				25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */,
-				2544CBBB1C1CF71500B94D0F /* User.swift */,
-				2544CBBC1C1CF71500B94D0F /* USERID.swift */,
-				2544CBBD1C1CF71500B94D0F /* TextFieldEffects.h */,
-				2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */,
+				25876EB61C1D482F00D641B8 /* ViewControllers */,
+				25876EB51C1D480900D641B8 /* Models */,
+				25876EB71C1D484700D641B8 /* Util */,
 				2544CB6F1C1CF52200B94D0F /* AppDelegate.swift */,
 				2544CB711C1CF52200B94D0F /* ViewController.swift */,
-				25876EA71C1D1D5400D641B8 /* Constants.swift */,
-				25E88B6A1C1CFFF9001C1078 /* Request.storyboard */,
-				25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */,
-				25E88B6B1C1CFFF9001C1078 /* Invest.storyboard */,
+				25876EB81C1D485C00D641B8 /* Resources */,
 				2544CB731C1CF52200B94D0F /* Main.storyboard */,
 				2544CB791C1CF52200B94D0F /* Assets.xcassets */,
-				25876EA31C1D19E600D641B8 /* fruits.jpg */,
-				25876EA41C1D19E600D641B8 /* ribs.jpg */,
 				2544CB7B1C1CF52200B94D0F /* LaunchScreen.storyboard */,
 				2544CB7E1C1CF52200B94D0F /* Info.plist */,
 				2544CB761C1CF52200B94D0F /* okane_ios.xcdatamodeld */,
@@ -289,6 +263,56 @@
 				2544CBD41C1CF7F800B94D0F /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25876EB51C1D480900D641B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25876EA91C1D1F4D00D641B8 /* TabBarView.swift */,
+				2544CBB91C1CF71500B94D0F /* StoriesViewController.swift */,
+				25876EAD1C1D35D800D641B8 /* TabBarViewController.swift */,
+				2544CBBA1C1CF71500B94D0F /* StoryDetailViewController.swift */,
+				25876EAF1C1D3AC100D641B8 /* MyAccountViewController.swift */,
+				2544CBB61C1CF71500B94D0F /* REQUESTID.swift */,
+				2544CBB21C1CF71500B94D0F /* Currency.swift */,
+				2544CBB31C1CF71500B94D0F /* INVESTID.swift */,
+				25876EB11C1D476400D641B8 /* RequestWrapper.swift */,
+				25E88B691C1CFFF9001C1078 /* Functionality.swift */,
+				2544CBBB1C1CF71500B94D0F /* User.swift */,
+				2544CBBC1C1CF71500B94D0F /* USERID.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		25876EB61C1D482F00D641B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2544CBB41C1CF71500B94D0F /* NewRequestViewController.swift */,
+				2544CBB51C1CF71500B94D0F /* RequestGoalView.swift */,
+				2544CBB71C1CF71500B94D0F /* RequestTableViewCell.swift */,
+				2544CBB81C1CF71500B94D0F /* RequestTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25876EB71C1D484700D641B8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2544CBBD1C1CF71500B94D0F /* TextFieldEffects.h */,
+				2544CBBE1C1CF71500B94D0F /* TextFieldsEffects.swift */,
+				25876EAB1C1D33F800D641B8 /* HoshiTextField.swift */,
+				25876EA71C1D1D5400D641B8 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		25876EB81C1D485C00D641B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25876EA31C1D19E600D641B8 /* fruits.jpg */,
+				25876EA41C1D19E600D641B8 /* ribs.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,11 +421,9 @@
 			files = (
 				2544CB7D1C1CF52200B94D0F /* LaunchScreen.storyboard in Resources */,
 				2544CB7A1C1CF52200B94D0F /* Assets.xcassets in Resources */,
-				25E88B6F1C1CFFF9001C1078 /* Request.storyboard in Resources */,
 				25876EA61C1D19E600D641B8 /* ribs.jpg in Resources */,
 				2544CB751C1CF52200B94D0F /* Main.storyboard in Resources */,
 				25876EA51C1D19E600D641B8 /* fruits.jpg in Resources */,
-				25E88B701C1CFFF9001C1078 /* Invest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +455,9 @@
 				2544CBCB1C1CF71500B94D0F /* USERID.swift in Sources */,
 				2544CB721C1CF52200B94D0F /* ViewController.swift in Sources */,
 				2544CBC31C1CF71500B94D0F /* NewRequestViewController.swift in Sources */,
+				25876EB21C1D476400D641B8 /* RequestWrapper.swift in Sources */,
 				2544CBC61C1CF71500B94D0F /* RequestTableViewCell.swift in Sources */,
 				25E88B6E1C1CFFF9001C1078 /* Functionality.swift in Sources */,
-				2544CBCE1C1CF72D00B94D0F /* Request.swift in Sources */,
-				2544CBC01C1CF71500B94D0F /* Investment.swift in Sources */,
 				2544CB701C1CF52200B94D0F /* AppDelegate.swift in Sources */,
 				25876EAC1C1D33F800D641B8 /* HoshiTextField.swift in Sources */,
 				2544CBCA1C1CF71500B94D0F /* User.swift in Sources */,
@@ -449,7 +470,6 @@
 				2544CBC41C1CF71500B94D0F /* RequestGoalView.swift in Sources */,
 				2544CBC81C1CF71500B94D0F /* StoriesViewController.swift in Sources */,
 				2544CBC71C1CF71500B94D0F /* RequestTableViewController.swift in Sources */,
-				2544CBBF1C1CF71500B94D0F /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

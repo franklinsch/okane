@@ -22,7 +22,6 @@ class StoryDetailViewController: UIViewController, TabBarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< HEAD
         let amountRaised = requestWrapper.requestObject["amountRaised"] as! Int
         let amountToRaise = requestWrapper.requestObject["amountToRaise"] as! Int
         
@@ -36,20 +35,10 @@ class StoryDetailViewController: UIViewController, TabBarViewController {
         self.requestGoal.amount = requestWrapper.requestObject["amountToRaise"] as! Int
         self.interestLabel.text = "\(requestWrapper.requestObject["interestRate"] as! Int)% interest"
         self.descriptionView.text = requestWrapper.requestObject["description"] as! String
-=======
+        
         let tabBarFrame = CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50)
         let tabBar = TabBarView(frame: tabBarFrame)
         tabBar.superView = self
-        
-        self.view.addSubview(tabBar)
-        
-        self.titleLabel.text = request.title
-        self.resultImage.image = request.image
-        self.requestGoal.progressRatio = CGFloat(request.amountRaised) / CGFloat(request.amountToRaise)
-        self.requestGoal.amount = request.amountToRaise
-        self.interestLabel.text = "\(request.interestRate)% interest"
-        self.descriptionView.text = request.description
->>>>>>> 096f68525382a530eaad56995c8d4e44d84e2aa6
     }
     
     func getTabBarViewController() -> UITabBarController {

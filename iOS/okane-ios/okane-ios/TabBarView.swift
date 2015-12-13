@@ -40,6 +40,7 @@ class TabBarView: UIView {
         homeButton.backgroundColor = Colors.darkBlue
         
         homeButton.layer.cornerRadius = homeButton.layer.frame.width / 2
+        homeButton.clipsToBounds = true
         
         homeButton.layer.borderColor = Colors.lightGray.CGColor
         homeButton.layer.borderWidth = 5.0
