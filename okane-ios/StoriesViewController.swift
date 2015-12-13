@@ -28,6 +28,11 @@ class StoriesViewController: UIViewController, TabBarViewController {
         
         tabBarViewController = self.parentViewController?.parentViewController as! UITabBarController
         tabBarViewController.tabBar.hidden = true
+        
+        tableViewController.tableView.backgroundView = UIImageView(image: UIImage(named: "background.png"))
+        view.layer.contents = UIImage(named: "background.png")!.CGImage
+        
+        tableViewController.tableView.backgroundColor = UIColor.clearColor()
     }
     
     func getTabBarViewController() -> UITabBarController {

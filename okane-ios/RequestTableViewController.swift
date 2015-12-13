@@ -63,6 +63,11 @@ class RequestTableViewController: UITableViewController {
             fatalError("Table view cell couldn't be casted to RequestTableViewCell")
         }
     
+        requestCell.backgroundColor = UIColor.clearColor()
+        requestCell.backgroundView = UIView()
+        requestCell.contentView.backgroundColor = UIColor.clearColor()
+        requestCell.selectedBackgroundView = UIView()
+        
         if let requestImageFile = requestWrapper.requestObject["image"] as? PFFile {
             let requestImageView = PFImageView()
             requestImageView.image = nil
