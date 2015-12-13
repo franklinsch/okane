@@ -40,19 +40,21 @@ class Functionality {
         }
     }
     
-    func searchWithTags(searchTags: [String]) -> [Request] {
-//        do {
-//            let objects = try PFQuery(className: "Request").whereKey("tags", containedIn: searchTags).findObjects()
-//        } catch {
-//            
-//        }
-        return [] // NOT complete
+    func searchWithTags(searchTags: [String]) -> [PFObject] {
+        var objects: [PFObject] = []
+        do {
+            objects = try PFQuery(className: "Request").whereKey("tags", containedIn: searchTags).findObjects()
+        } catch {
+            
+        }
+        return objects
     }
     
     func addFriend(userid: USERID, friendid: USERID) {
         let newFriendRelation = PFObject(className: "FriendRelation")
         newFriendRelation["user"] = userid
         newFriendRelation["friend"] = friendid
+        newFriendRelation["confirmed"] = false
         do {
             try newFriendRelation.save()
         } catch {
@@ -61,10 +63,19 @@ class Functionality {
     }
     
     func deleteFriend(userid: USERID, friendid: USERID) {
-        
+        let users = [userid, friendid]
+        do {
+            try PFObject.deleteAll(PFQuery(className: "FriendRelation").whereKey("user", containedIn: users).whereKey("friend", containedIn: users).findObjects())
+        } catch {
+            
+        }
     }
     
     func confirmFriend(userid: USERID, friendid: USERID) {
-        
+        do {
+            try PFQuery(className: "FriendRelation").whereKey("user", equalTo: userid).whereKey("friend", equalTo: friendid).getFirstObject()["confirmed"] = true
+        } catch {
+            
+        }
     }
 }
