@@ -74,9 +74,9 @@ class TabBarView: UIView {
         accountButton.addSubview(accountLabel)
         
         let homeLabelDiameter = CGFloat(40)
-        homeLabel = UILabel(frame: CGRectMake(17, 12, homeLabelDiameter, homeLabelDiameter))
+        homeLabel = UILabel(frame: CGRectMake(20, 12, homeLabelDiameter, homeLabelDiameter))
         
-        homeLabel.text = "金"
+        homeLabel.text = "∴"
         homeLabel.font = UIFont.systemFontOfSize(40)
         homeLabel.sizeToFit()
         homeLabel.textColor = Colors.lightGreen

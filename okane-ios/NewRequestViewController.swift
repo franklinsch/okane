@@ -11,8 +11,11 @@ import UIKit
 class NewRequestViewController: UIViewController, TabBarViewController {
 
     @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var submitView: UIView!
     
     var tabBarViewController: UITabBarController!
+    
+    @IBOutlet weak var dateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,13 @@ class NewRequestViewController: UIViewController, TabBarViewController {
         
         tabBarViewController = self.parentViewController as! UITabBarController
         tabBarViewController.tabBar.hidden = true
+        
+        view.layer.contents = UIImage(named: "background.png")!.CGImage
+        
+        submitView.backgroundColor = Colors.darkBlue
+        submitView.layer.cornerRadius = 5.0
+        submitView.alpha = 0.75
+        
     }
     
     func getTabBarViewController() -> UITabBarController {
@@ -36,7 +46,6 @@ class NewRequestViewController: UIViewController, TabBarViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     /*
     // MARK: - Navigation
 

@@ -1,0 +1,6 @@
+framework module Pods_okane_ios {
+  umbrella header "Pods-okane-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
